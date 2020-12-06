@@ -76,3 +76,15 @@ function evt(n){
     targetElement.innerHTML = targetElement.innerHTML.replace(imageName[n][tempIndex], imageName[n][image[n]]);
 }
 
+function allclik(){
+    for (n = 0;n<40;n++){
+        var targetElement = document.getElementById("c" + String(n));
+        var tempIndex =  image[n];
+        image[n] += 1;
+
+        if(image[n] >= imageName[n].length){
+            image[n] = 0;
+        }
+        targetElement.innerHTML = targetElement.innerHTML.replace(imageName[n][tempIndex], imageName[n][image[n]]);
+    }
+}
