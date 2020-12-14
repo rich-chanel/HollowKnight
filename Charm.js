@@ -23,7 +23,7 @@
 
 var image = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]  
 var imageName = [
-    ["charm_backboard","_0"],
+    ["charm_backboard","c_0"],
     ["charm_backboard","_1"],
     ["charm_backboard","_2"],
     ["charm_backboard","_3"],
