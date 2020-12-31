@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+    <title>완성도 체크리스트</title>
+    <link href="completion.css" rel="stylesheet" type="text/css">
+    <link href="image/title.png" rel="shortcut icon" type="image/x-icon">
+    <script src="completion.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td colspan="2">
+                <div style="width: 646px; margin: auto;"><!--버튼-->
+                    <table>
+                        <tr>
+                            <td><button class="button5" onclick="Close()">전체 접기</button></td>
+                            <td><button class="button5" onclick="Open()">전체 펴기</button></td>
+                            <td><button class="button5" onclick="Checked()">전체 선택</button></td>
+                            <td><button class="button5" onclick="Unchecked()">전체 해제</button></td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+        <tr><td colspan="2"><div id="result" style="width: 646px; text-align: center; margin: auto;">완성도 : 0%</div></td></tr>
+        <tr style="vertical-align: top;">
+            <td>
+                <div style="margin: auto"><!--대못강화-->
+                    <details>
+                        <summary><input type="checkbox" name="nail" id="nail0" onclick="box_1('nail', 0, 0)"><label for="nail0">대못강화</label></summary>
+                        <p><input type="checkbox" name="nail" id="nail1" onclick="box_1('nail', 1, 0)"><label for="nail1">대못 1강</label></p>
+                        <p><input type="checkbox" name="nail" id="nail2" onclick="box_1('nail', 2, 0)"><label for="nail2">대못 2강</label></p>
+                        <p><input type="checkbox" name="nail" id="nail3" onclick="box_1('nail', 3, 0)"><label for="nail3">대못 3강</label></p>
+                        <p><input type="checkbox" name="nail" id="nail4" onclick="box_1('nail', 4, 0)"><label for="nail4">대못 4강</label></p>
+                    </details>
+                </div>
+                <div><!--대못기술-->
+                    <details>
+                        <summary><input type="checkbox" name="nailart" id="nailart0" onclick="box_2('nailart', 0, 8)"><label for="nailart0">대못기술</label></summary>
+                        <p><input type="checkbox" name="nailart" id="nailart1" onclick="box_2('nailart', 1, 8)"><label for="nailart1">강력한 참격</label></p>
+                        <p><input type="checkbox" name="nailart" id="nailart2" onclick="box_2('nailart', 1, 8)"><label for="nailart2">대쉬 참격</label></p>
+                        <p><input type="checkbox" name="nailart" id="nailart3" onclick="box_2('nailart', 1, 8)"><label for="nailart3">회오리 참격</label></p>
+                    </details>
+                </div>
+                <div><!--드림네일-->
+                    <details>
+                        <summary><input type="checkbox" name="dream_nail", id="dream_nail0" onclick="box_1('dream_nail', 0, 1)"><label for="dream_nail0">몽환의 대못</label></summary>
+                        <p><input type="checkbox" name="dream_nail", id="dream_nail1" onclick="box_1('dream_nail', 1, 1)"><label for="dream_nail1">몽환의 대못</label></p>
+                        <p><input type="checkbox" name="dream_nail", id="dream_nail2" onclick="box_1('dream_nail', 2, 1)"><label for="dream_nail2">각성된 몽환의 대못</label></p>
+                        <p><input type="checkbox" name="dream_nail", id="dream_nail3" onclick="box_1('dream_nail', 3, 1)"><label for="dream_nail">예언자에게 마지막 보상받기</label></p>
+                    </details>
+                </div>
+                <div><!--주문-->
+                    <details>
+                        <summary><input type="checkbox" name="spell" id="spell0" onclick="box_2('spell', 0, 9)"><label for="spell0">주문</label></summary>
+                        <p><input type="checkbox" name="spell" id="spell1" onclick="box_2('spell', 1, 9)"><label for="spell1">고독한 강하</label></p>
+                        <p><input type="checkbox" name="spell" id="spell2" onclick="box_2('spell', 1, 9)"><label for="spell2">암흑의 강림</label></p>
+                        <p><input type="checkbox" name="spell" id="spell3" onclick="box_2('spell', 1, 9)"><label for="spell3">울부짖는 원혼들</label></p>
+                        <p><input type="checkbox" name="spell" id="spell4" onclick="box_2('spell', 1, 9)"><label for="spell4">심연의 비명</label></p>
+                        <p><input type="checkbox" name="spell" id="spell5" onclick="box_2('spell', 1, 9)"><label for="spell5">복수의 영령</label></p>
+                        <p><input type="checkbox" name="spell" id="spell6" onclick="box_2('spell', 1, 9)"><label for="spell6">어둠의 영혼</label></p>
+                    </details>
+                </div>
+                <div><!--소지품-->
+                    <details>
+                        <summary><input type="checkbox" name="equipment" id="equipment0" onclick="box_2('equipment', 0, 6)"><label for="equipment0"></label>소지품</summary>
+                        <p><input type="checkbox" name="equipment" id="equipment1" onclick="box_2('equipment', 1, 6)"><label for="equipment1"></label>왕의 문장</p>
+                        <p><input type="checkbox" name="equipment" id="equipment2" onclick="box_2('equipment', 1, 6)"><label for="equipment2"></label>수정 심장</p>
+                        <p><input type="checkbox" name="equipment" id="equipment3" onclick="box_2('equipment', 1, 6)"><label for="equipment3"></label>사마귀 갈고리</p>
+                        <p><input type="checkbox" name="equipment" id="equipment4" onclick="box_2('equipment', 1, 6)"><label for="equipment4"></label>제왕의 날개</p>
+                        <p><input type="checkbox" name="equipment" id="equipment5" onclick="box_2('equipment', 1, 6)"><label for="equipment5"></label>이스마의 눈물</p>
+                        <p><input type="checkbox" name="equipment" id="equipment6" onclick="box_2('equipment', 1, 6)"><label for="equipment6"></label>나방날개 망토</p>
+                        <p><input type="checkbox" name="equipment" id="equipment7" onclick="box_2('equipment', 1, 6)"><label for="equipment7"></label>그림자 망토</p>
+                    </details>
+                </div>
+                <div><!--가면 &그릇-->
+                    <details>
+                        <summary><input type="checkbox" name="mask" id="mask0" onclick="box_1('mask', 0, 7)"><label for="mask0">가면 조각 &nbsp; </label><input type="checkbox" name="vessel" id="vessel0" onclick="box_1('vessel', 0, 10)"><label for="vessel0">그릇 조각</label></summary>
+                        <!-- <summary></summary> -->
+                        <p><input type="checkbox" name="mask" id="mask1" onclick="box_1('mask', 1, 7)"><label for="mask1">가면 업그레이드1</label></p>
+                        <p><input type="checkbox" name="mask" id="mask2" onclick="box_1('mask', 2, 7)"><label for="mask2">가면 업그레이드2</label></p>
+                        <p><input type="checkbox" name="mask" id="mask3" onclick="box_1('mask', 3, 7)"><label for="mask3">가면 업그레이드3</label></p>
+                        <p><input type="checkbox" name="mask" id="mask4" onclick="box_1('mask', 4, 7)"><label for="mask4">가면 업그레이드4</label></p>
+                        <p><input type="checkbox" name="vessel" id="vessel1" onclick="box_1('vessel', 1, 10)"><label for="vessel1">그릇 업그레이드1</label></p>
+                        <p><input type="checkbox" name="vessel" id="vessel2" onclick="box_1('vessel', 2, 10)"><label for="vessel2">그릇 업그레이드2</label></p>
+                        <p><input type="checkbox" name="vessel" id="vessel3" onclick="box_1('vessel', 3, 10)"><label for="vessel3">그릇 업그레이드3</label></p>
+                    </details>
+                </div>
+            </td>
+            <td>
+                <div style="margin: auto;"><!--보스-->
+                    <details>
+                        <summary><input type="checkbox" name="boss" id="boss0" onclick="box_2('boss', 0, 3)"><label for="boss0">보스</label></summary>
+                        <p><input type="checkbox" name="boss" id="boss1" onclick="box_2('boss', 1, 2)"><label for="boss1">음울한 몰렉</label></p>
+                        <p><input type="checkbox" name="boss" id="boss2" onclick="box_2('boss', 1, 2)"><label for="boss2">붕붕파리 어미</label></p>
+                        <p><input type="checkbox" name="boss" id="boss3" onclick="box_2('boss', 1, 2)"><label for="boss3">수집가</label></p>
+                        <p><input type="checkbox" name="boss" id="boss4" onclick="box_2('boss', 1, 2)"><label for="boss4">우무우</label></p>
+                        <p><input type="checkbox" name="boss" id="boss5" onclick="box_2('boss', 1, 2)"><label for="boss5">노스크</label></p>
+                        <p><input type="checkbox" name="boss" id="boss6" onclick="box_2('boss', 1, 2)"><label for="boss6">배신자 군주</label></p>
+                        <p><input type="checkbox" name="boss" id="boss7" onclick="box_2('boss', 1, 2)"><label for="boss7">부서진 그릇</label></p>
+                        <p><input type="checkbox" name="boss" id="boss8" onclick="box_2('boss', 1, 2)"><label for="boss8">감시자의 기사</label></p>
+                        <p><input type="checkbox" name="boss" id="boss9" onclick="box_2('boss', 1, 2)"><label for="boss9">쇠똥구리 수호기사</label></p>
+                        <p><input type="checkbox" name="boss" id="boss10" onclick="box_2('boss', 1, 2)"><label for="boss10">영혼 통달자</label></p>
+                        <p><input type="checkbox" name="boss" id="boss11" onclick="box_2('boss', 1, 2)"><label for="boss11">사마귀 군주들</label></p>
+                        <p><input type="checkbox" name="boss" id="boss12" onclick="box_2('boss', 1, 2)"><label for="boss12">호넷 수호자</label></p>
+                        <p><input type="checkbox" name="boss" id="boss13" onclick="box_2('boss', 1, 2)"><label for="boss13">호넷 파수꾼</label></p>
+                        <p><input type="checkbox" name="boss" id="boss14" onclick="box_2('boss', 1, 2)"><label for="boss14">거짓된 기사</label></p>
+                        <p><input type="checkbox" name="boss" id="boss15" onclick="box_2('boss', 1, 2)"><label for="boss15">벌집 기사</label></p>
+                        <p><input type="checkbox" name="boss" id="boss16" onclick="box_2('boss', 1, 2)"><label for="boss16">극단장 그림</label></p>
+                        <p><input type="checkbox" name="boss" id="boss17" onclick="box_2('boss', 1, 2)"><label for="boss17">악몽왕 그림</label></p>
+                    </details>
+                </div>
+                <div><!--전사의 꿈-->
+                    <details>
+                        <summary><input type="checkbox" name="warrior" id="warrior0" onclick="box_2('warrior', 0, 11)"><label for="warrior0">전사의 꿈</label></summary>
+                        <p><input type="checkbox" name="warrior" id="warrior1" onclick="box_2('warrior', 1, 11)"><label for="warrior1">갈리엔</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior2" onclick="box_2('warrior', 1, 11)"><label for="warrior2">마르무</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior3" onclick="box_2('warrior', 1, 11)"><label for="warrior3">마르코스</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior4" onclick="box_2('warrior', 1, 11)"><label for="warrior4">제로</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior5" onclick="box_2('warrior', 1, 11)"><label for="warrior5">눈없는이</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior6" onclick="box_2('warrior', 1, 11)"><label for="warrior6">장로 후</label></p>
+                        <p><input type="checkbox" name="warrior" id="warrior7" onclick="box_2('warrior', 1, 11)"><label for="warrior7">고르브</label></p>
+                    </details>
+                </div>
+                <div><!--투기장-->
+                    <details>
+                        <summary><input type="checkbox" name="colosseum" id="colosseum0" onclick="box_1('colosseum', 0, 4)"><label for="colosseum0">바보들의 투기장</label></summary>
+                        <p><input type="checkbox" name="colosseum" id="colosseum1" onclick="box_1('colosseum', 1, 4)"><label for="colosseum1">전사 선발 대회</label></p>
+                        <p><input type="checkbox" name="colosseum" id="colosseum2" onclick="box_1('colosseum', 2, 4)"><label for="colosseum2">정복자 선발 대회</label></p>
+                        <p><input type="checkbox" name="colosseum" id="colosseum3" onclick="box_1('colosseum', 3, 4)"><label for="colosseum3">바보 선발 대회</label></p>
+                    </details>
+                </div>
+                <div><!--신들의 고향-->
+                    <details>
+                        <summary><input type="checkbox" name="godmaster" id="godmaster0" onclick="box_1('godmaster', 0, 12)"><label for="godmaster0">신들의 고향</label></summary>
+                        <p><input type="checkbox" name="godmaster" id="godmaster1" onclick="box_1('godmaster', 1, 12)"><label for="godmaster1">신 조율기</label></p>
+                        <p><input type="checkbox" name="godmaster" id="godmaster2" onclick="box_1('godmaster', 2, 12)"><label for="godmaster2">사부의 만신전</label></p>
+                        <p><input type="checkbox" name="godmaster" id="godmaster3" onclick="box_1('godmaster', 3, 12)"><label for="godmaster3">예술가의 만신전</label></p>
+                        <p><input type="checkbox" name="godmaster" id="godmaster4" onclick="box_1('godmaster', 4, 12)"><label for="godmaster4">현자의 만신전</label></p>
+                        <p><input type="checkbox" name="godmaster" id="godmaster5" onclick="box_1('godmaster', 5, 12)"><label for="godmaster5">기사의 만신전</label></p>
+                    </details>
+                </div>
+                <div><!--드리머-->
+                    <details>
+                        <summary><input type="checkbox" name="dreamer" id="dreamer0" onclick="box_2('dreamer', 0, 5)"><label for="dreamer0">꿈꾸는자</label></summary>
+                        <p><input type="checkbox" name="dreamer" id="dreamer1" onclick="box_2('dreamer', 1, 5)"><label for="dreamer1"></label>감시자 루리엔</p>
+                        <p><input type="checkbox" name="dreamer" id="dreamer2" onclick="box_2('dreamer', 1, 5)"><label for="dreamer2"></label>스승 모노몬</p>
+                        <p><input type="checkbox" name="dreamer" id="dreamer3" onclick="box_2('dreamer', 1, 5)"><label for="dreamer3"></label>야수 헤라</p>
+                    </details>
+                </div>
+                <div><!--부적-->
+                    <details>
+                        <summary><input type="checkbox" name="charm" id="charm0" onclick="box_2('charm', 0, 3)"><label for="charm0">부적</label></summary>
+                        <p><input type="checkbox" name="charm" id="charm1" onclick="box_2('charm', 1, 3)"><label for="charm1">변덕스런 나침반</label></p>
+                        <p><input type="checkbox" name="charm" id="charm2" onclick="box_2('charm', 1, 3)"><label for="charm2">수집벌레무리</label></p>
+                        <p><input type="checkbox" name="charm" id="charm3" onclick="box_2('charm', 1, 3)"><label for="charm3">튼튼한 껍데기</label></p>
+                        <p><input type="checkbox" name="charm" id="charm4" onclick="box_2('charm', 1, 3)"><label for="charm4">영혼 포획자</label></p>
+                        <p><input type="checkbox" name="charm" id="charm5" onclick="box_2('charm', 1, 3)"><label for="charm5">주술사의 돌</label></p>
+                        <p><input type="checkbox" name="charm" id="charm6" onclick="box_2('charm', 1, 3)"><label for="charm6">영혼 포식자</label></p>
+                        <p><input type="checkbox" name="charm" id="charm7" onclick="box_2('charm', 1, 3)"><label for="charm7">대시마스터</label></p>
+                        <p><input type="checkbox" name="charm" id="charm8" onclick="box_2('charm', 1, 3)"><label for="charm8">잘주마스터</label></p>
+                        <p><input type="checkbox" name="charm" id="charm9" onclick="box_2('charm', 1, 3)"><label for="charm9">애벌레의 노래</label></p>
+                        <p><input type="checkbox" name="charm" id="charm10" onclick="box_2('charm', 1, 3)"><label for="charm10">애벌나비 애가</label></p>
+                        <p><input type="checkbox" name="charm" id="charm11" onclick="box_2('charm', 1, 3)"><label for="charm11">허술한/불멸의 심장</label></p>
+                        <p><input type="checkbox" name="charm" id="charm12" onclick="box_2('charm', 1, 3)"><label for="charm12">허술한/불멸의 탐욕</label></p>
+                        <p><input type="checkbox" name="charm" id="charm13" onclick="box_2('charm', 1, 3)"><label for="charm13">허술한/불멸의 힘</label></p>
+                        <p><input type="checkbox" name="charm" id="charm41" onclick="box_2('charm', 1, 3)"><label for="charm14">주문 회오리</label></p>
+                        <p><input type="checkbox" name="charm" id="charm15" onclick="box_2('charm', 1, 3)"><label for="charm15">흔들림없는 자세</label></p>
+                        <p><input type="checkbox" name="charm" id="charm16" onclick="box_2('charm', 1, 3)"><label for="charm16">묵직한 타격</label></p>
+                        <p><input type="checkbox" name="charm" id="charm17" onclick="box_2('charm', 1, 3)"><label for="charm17">빠른 참격</label></p>
+                        <p><input type="checkbox" name="charm" id="charm18" onclick="box_2('charm', 1, 3)"><label for="charm18">기다란 대못</label></p>
+                        <p><input type="checkbox" name="charm" id="charm19" onclick="box_2('charm', 1, 3)"><label for="charm19">긍지의 표식</label></p>
+                        <p><input type="checkbox" name="charm" id="charm20" onclick="box_2('charm', 1, 3)"><label for="charm20">전사자의 분노</label></p>
+                        <p><input type="checkbox" name="charm" id="charm21" onclick="box_2('charm', 1, 3)"><label for="charm21">고통의 가시덩굴</label></p>
+                        <p><input type="checkbox" name="charm" id="charm22" onclick="box_2('charm', 1, 3)"><label for="charm22">발더 껍데기</label></p>
+                        <p><input type="checkbox" name="charm" id="charm23" onclick="box_2('charm', 1, 3)"><label for="charm23">흡충 둥지</label></p>
+                        <p><input type="checkbox" name="charm" id="charm24" onclick="box_2('charm', 1, 3)"><label for="charm24">수호기사의 문장</label></p>
+                        <p><input type="checkbox" name="charm" id="charm25" onclick="box_2('charm', 1, 3)"><label for="charm25">영롱한 알집</label></p>
+                        <p><input type="checkbox" name="charm" id="charm26" onclick="box_2('charm', 1, 3)"><label for="charm26">쾌속 집중</label></p>
+                        <p><input type="checkbox" name="charm" id="charm27" onclick="box_2('charm', 1, 3)"><label for="charm27">깊은 집중</label></p>
+                        <p><input type="checkbox" name="charm" id="charm28" onclick="box_2('charm', 1, 3)"><label for="charm28">생명혈 심장</label></p>
+                        <p><input type="checkbox" name="charm" id="charm29" onclick="box_2('charm', 1, 3)"><label for="charm29">생명혈 핵</label></p>
+                        <p><input type="checkbox" name="charm" id="charm30" onclick="box_2('charm', 1, 3)"><label for="charm30">조니의 축복</label></p>
+                        <p><input type="checkbox" name="charm" id="charm31" onclick="box_2('charm', 1, 3)"><label for="charm31">벌집 정수</label></p>
+                        <p><input type="checkbox" name="charm" id="charm32" onclick="box_2('charm', 1, 3)"><label for="charm32">포자 버섯</label></p>
+                        <p><input type="checkbox" name="charm" id="charm33" onclick="box_2('charm', 1, 3)"><label for="charm33">날카로운 그림자</label></p>
+                        <p><input type="checkbox" name="charm" id="charm34" onclick="box_2('charm', 1, 3)"><label for="charm34">우운의 호수</label></p>
+                        <p><input type="checkbox" name="charm" id="charm35" onclick="box_2('charm', 1, 3)"><label for="charm35">대못사부의 영예</label></p>
+                        <p><input type="checkbox" name="charm" id="charm36" onclick="box_2('charm', 1, 3)"><label for="charm36">엮는 이의 노래</label></p>
+                        <p><input type="checkbox" name="charm" id="charm37" onclick="box_2('charm', 1, 3)"><label for="charm37">꿈의 주인</label></p>
+                        <p><input type="checkbox" name="charm" id="charm38" onclick="box_2('charm', 1, 3)"><label for="charm38">몽환의 방패</label></p>
+                        <p><input type="checkbox" name="charm" id="charm39" onclick="box_2('charm', 1, 3)"><label for="charm39">그림의 아이/경쾌한 선율</label></p>
+                        <p><input type="checkbox" name="charm" id="charm40" onclick="box_2('charm', 1, 3)"><label for="charm40">왕의 영혼/공허의 심장</label></p>
+                    </details>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
