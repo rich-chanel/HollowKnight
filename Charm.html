@@ -1,172 +1,21 @@
 <!DOCTYPE html>
 <head>
-    <!-- 
-        + 나중에 이거 하자 https://zetawiki.com/wiki/HTML_%ED%8E%98%EC%9D%B4%EC%A7%80_%EC%9D%B4%EB%8F%99
-        v1.0.1
-            오타 수정
-        v1.0
-            부적 체크리스트 완성
-     -->
-    <title>
-        부적 체크리스트
-    </title>
-    <link href="Charm.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="image/Notch.png">
-    <style>
-        body{
-            background-color: #303030;
+    <script>
+        var SetTime = 4;
+        function msg_time() {
+            m = "잠시뒤 바뀐 링크로 이동합니다 ... " + (SetTime % 60) + " 초";
+            var msg = m;
+            document.all.ViewTimer.innerHTML = msg;      
+            SetTime--;
+            if (SetTime < 0) {
+                clearInterval(tid);
+            }
         }
-    </style>
+        window.onload = function TimerStart(){ tid=setInterval('msg_time()',1000) };
+    </script>
 </head>
 <body>
-
-    <script src="Charm.js"></script>
-
-    <table style="margin: auto;">
-        
-        <tr>    <!-- 1행 -->
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-            <td width="78px" height="1px"></td>
-        </tr>
-
-        <tr height="156px"> <!-- 2행 -->
-            <td colspan="2" onclick="evt(0)" id="c0"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(1)" id="c1"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(2)" id="c2"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(3)" id="c3"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(4)" id="c4"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(5)" id="c5"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(6)" id="c6"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(7)" id="c7"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(8)" id="c8"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(9)" id="c9"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td></td>    
-        </tr>
-
-        <tr height="156px"> <!-- 3행 -->
-            <td></td>
-            <td colspan="2" onclick="evt(10)" id="c10"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(11)" id="c11"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(12)" id="c12"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(13)" id="c13"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(14)" id="c14"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(15)" id="c15"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(16)" id="c16"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(17)" id="c17"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(18)" id="c18"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(19)" id="c19"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-        </tr>
-    
-        <tr height="156px"> <!-- 4행 -->
-            <td colspan="2" onclick="evt(20)" id="c20"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(21)" id="c21"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(22)" id="c22"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(23)" id="c23"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(24)" id="c24"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(25)" id="c25"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(26)" id="c26"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(27)" id="c27"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(28)" id="c28"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(29)" id="c29"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td></td>    
-        </tr>
-
-        <tr height="156px"> <!-- 5행 -->
-            <td></td>
-            <td colspan="2" onclick="evt(30)" id="c30"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(31)" id="c31"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(32)" id="c32"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(33)" id="c33"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(34)" id="c34"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(35)" id="c35"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(36)" id="c36"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(37)" id="c37"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(38)" id="c38"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-            <td colspan="2" onclick="evt(39)" id="c39"><img src="image/charm_backboard.png" title="클릭하면 바뀝니다"></td>
-        </tr>
-    </table>
-
-    <br><br>
-    <table style="margin: auto;">
-        <tr>
-            <td><button class="button5" onclick="allclik()">전체 선택</button></td>
-            <td><button class="button5" onclick="allunclik()">전체 해제</button></td>
-        </tr>
-    </table>
-
-<!-- 밑에 코드는 image preloading을 위한것 -->
-    <p style="background-image: url(image/c0.png);"></p>
-    <p style="background-image: url(image/c1.png);"></p>
-    <p style="background-image: url(image/c2.png);"></p>
-    <p style="background-image: url(image/c3.png);"></p>
-    <p style="background-image: url(image/c4.png);"></p>
-    <p style="background-image: url(image/c5.png);"></p>
-    <p style="background-image: url(image/c6.png);"></p>
-    <p style="background-image: url(image/c7.png);"></p>
-    <p style="background-image: url(image/c8.png);"></p>
-    <p style="background-image: url(image/c9.png);"></p>
-    <p style="background-image: url(image/c10-1.png);"></p>
-    <p style="background-image: url(image/c10-2.png);"></p>
-    <p style="background-image: url(image/c10-3.png);"></p>
-    <p style="background-image: url(image/c11-1.png);"></p>
-    <p style="background-image: url(image/c11-2.png);"></p>
-    <p style="background-image: url(image/c11-3.png);"></p>
-    <p style="background-image: url(image/c12-1.png);"></p>
-    <p style="background-image: url(image/c12-2.png);"></p>
-    <p style="background-image: url(image/c12-3.png);"></p>
-    <p style="background-image: url(image/c13.png);"></p>
-    <p style="background-image: url(image/c14.png);"></p>
-    <p style="background-image: url(image/c15.png);"></p>
-    <p style="background-image: url(image/c16.png);"></p>
-    <p style="background-image: url(image/c17.png);"></p>
-    <p style="background-image: url(image/c18.png);"></p>
-    <p style="background-image: url(image/c19.png);"></p>
-    <p style="background-image: url(image/c20.png);"></p>
-    <p style="background-image: url(image/c21.png);"></p>
-    <p style="background-image: url(image/c22.png);"></p>
-    <p style="background-image: url(image/c23.png);"></p>
-    <p style="background-image: url(image/c24.png);"></p>
-    <p style="background-image: url(image/c25.png);"></p>
-    <p style="background-image: url(image/c26.png);"></p>
-    <p style="background-image: url(image/c27.png);"></p>
-    <p style="background-image: url(image/c28.png);"></p>
-    <p style="background-image: url(image/c29.png);"></p>
-    <p style="background-image: url(image/c30.png);"></p>
-    <p style="background-image: url(image/c31.png);"></p>
-    <p style="background-image: url(image/c32.png);"></p>
-    <p style="background-image: url(image/c33.png);"></p>
-    <p style="background-image: url(image/c34.png);"></p>
-    <p style="background-image: url(image/c35.png);"></p>
-    <p style="background-image: url(image/c36.png);"></p>
-    <p style="background-image: url(image/c37.png);"></p>
-    <p style="background-image: url(image/c38-1.png);"></p>
-    <p style="background-image: url(image/c38-2.png);"></p>
-    <p style="background-image: url(image/c38-3.png);"></p>
-    <p style="background-image: url(image/c38-4.png);"></p>
-    <p style="background-image: url(image/c38-5.png);"></p>
-    <p style="background-image: url(image/c39-1.png);"></p>
-    <p style="background-image: url(image/c39-2.png);"></p>
-    <p style="background-image: url(image/c39-3.png);"></p>
-    <p style="background-image: url(image/c39-4.png);"></p>
-
+    <meta http-equiv='refresh' content='6; url=https://rich-chanel.github.io/HollowKnight/Charm/charm.html'>
+    <div id="ViewTimer">잠시뒤 바뀐 링크로 이동합니다 ... 5 초</div>
+    <a href="https://rich-chanel.github.io/HollowKnight/Charm/charm.html">https://rich-chanel.github.io/HollowKnight/Charm/charm.html</a>
 </body>
-
